@@ -1,0 +1,24 @@
+{
+  "name": "org.cordova.bluetoothmacaddress",
+  "version": "0.1.0",
+  "description": "Cordova Bluetooth MacAddress Plugin",
+  "cordova": {
+    "id": "org-cordova-bluetoothmacaddress",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KinG-InFeT/BluetoothMacAddress"
+  },
+  "keywords": [
+    "cordova",
+    "macaddress",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "MIT"
+}

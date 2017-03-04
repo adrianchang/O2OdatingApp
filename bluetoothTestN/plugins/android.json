@@ -1,0 +1,27 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.bluetoothTestN"
+        },
+        "cordova-plugin-bluetooth-serial": {
+            "PACKAGE_NAME": "com.bluetoothTestN"
+        },
+        "com-badrit-macaddress": {
+            "PACKAGE_NAME": "com.bluetoothTestN"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.bluetoothTestN"
+        },
+        "org.cordova.bluetoothmacaddress": {
+            "PACKAGE_NAME": "com.bluetoothTestN"
+        }
+    },
+    "dependent_plugins": {}
+}

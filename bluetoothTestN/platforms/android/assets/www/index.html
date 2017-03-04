@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"> -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa|Yellowtail" rel="stylesheet">
+
+        <!-- FIREBASE CLIENT-SIDE INITIALIZATION -->
+        <!-- <script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyD8uRsr0Cwen-k-JwOx5Am0ARu7jDH9AV0",
+            authDomain: "myapp-dc1cb.firebaseapp.com",
+            databaseURL: "https://myapp-dc1cb.firebaseio.com",
+            storageBucket: "myapp-dc1cb.appspot.com",
+            messagingSenderId: "635172411383"
+          };
+          firebase.initializeApp(config);
+        </script> -->
+
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Rudder</title>
+    </head>
+    <body>
+        <!-- <img src="img/beach-1868557_1920.jpeg" id="bg" alt=""> -->
+
+        <div class="app">
+            <!-- Splash Screen -->
+            <div id="app-splash">
+                <h1><span>Rudder</span></h1>
+                <h2><span>make  friends  with  people  around  you</span></h2>
+                <div id="f-login">
+                    Email: <input type="text" id="email" name="email"><br>
+                    Password: <input type="password" id="password" name="password"><br>
+                    <button type="button" id="b-login">LOGIN</button><br>
+                    Not registered? <button id="b-createAcc">Create an account</button>
+                </div>
+                <!-- Sign up form -->
+                <div id="f-signup">
+                    First Name: <input type="text" id="signup-firstname" name="firstname"><br>
+                    Last Name: <input type="text" id="signup-lastname" name="lastname"><br>
+                    Email: <input type="text" id="signup-email" name="email"><br>
+                    Password: <input type="password" id="signup-password" name="password"><br>
+                    <button type="button" id="b-signup">SIGNUP</button><br>
+                    Already have an account? <button id="b-openLogin">Login here</button>
+                </div>
+            </div>
+
+            <!-- App Page -->
+            <div id="app-main">
+                <h1><span>Rudder</span></h1>
+                <div id="menu" class="center70">
+                    <button id="b-profile">
+                        Profile
+                    </button>
+                    <button id="b-discover">
+                        Discover
+                    </button>
+                    <button id="b-signout">
+                        Sign Out
+                    </button>
+                </div>
+                <div id="p-profile">
+                    <div id="dp-upload">
+                        <input type="text" id="dp-url"></input>
+                        <button id="b-dp-upload">Save</button><br>
+                    </div>
+                    <div id="prof-content">
+                    </div>
+                </div>
+                <div id="p-discovery" class="center70">
+                    <div id="users">
+                      <ul class="list">
+                        <!-- Dummy -->
+                        <li> Blah </li>
+                      </ul>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="https://www.gstatic.com/firebasejs/3.6.3/firebase.js"></script>
+        <script type="text/javascript" src="js/jquery-3.1.1.slim.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/firebaseControl.js"></script>
+        <script type="text/javascript" src="js/index.js"></script> 
+    </body>
+</html>

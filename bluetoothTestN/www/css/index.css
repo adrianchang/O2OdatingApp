@@ -1,0 +1,84 @@
+html, body {
+    min-height: 100%;
+}
+body {
+    background-image: url("../img/beach-1868557_1920.jpeg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+}
+
+ul li {
+    color: grey;
+}
+
+button {
+    box-shadow:none;
+    background: none;
+    color: white;
+    border-radius: 0px;
+}
+
+div.app h1{
+    top: 7%;
+    text-align: center; 
+}
+div.app h2{
+    top: 0%;
+    text-align: center; 
+}
+
+div.app > div {
+    top: 14%;
+    margin: auto;
+    width: 70%;
+}
+
+.marginauto {
+    margin: auto;
+}
+
+.center70 {
+    margin: auto;
+    width: 70%;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+#prof-pic {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    display: block;
+}
+
+div.app div input{
+    /*margin:auto;*/
+    width: 30%;
+    background: none; 
+    box-shadow:none;
+    color: white;
+}
+
+div.app h1 span{
+    font-family: 'Aref Ruqaa', serif;
+    font-size: 44px;
+    color: white;
+}
+
+div.app h2 span{
+    font-family: 'Yellowtail', cursive;
+    font-size: 18px;
+    color: grey;
+}
+
+@media (min-width: 1120px), (min-height: 630px) {
+    body { background-size: auto; }
+}
+
+#p-profile {
+    color: white;
+}
